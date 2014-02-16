@@ -29,6 +29,7 @@ public class PersonController extends Controller {
 		p.age = 38;
 		p.address = "Istanbul";
 		p.loc = loc;
+		p.imgUrl = "http://www.emresupcin.com/wp-content/uploads/2013/02/Android_emresupcin.jpg";
 		persons.add(p);
 
 		p = new Person();
@@ -37,6 +38,7 @@ public class PersonController extends Controller {
 		p.age = 25;
 		p.address = "Istanbul";
 		p.loc = loc;
+		p.imgUrl = "http://lifeonmymobile.com/wp-content/uploads/2012/01/android-girl.jpg";
 		persons.add(p);
 
 		p = new Person();
@@ -45,6 +47,7 @@ public class PersonController extends Controller {
 		p.age = 33;
 		p.address = "Istanbul";
 		p.loc = loc;
+		p.imgUrl = "http://www.androidde.net/wp-content/uploads/2012/07/android-logo.jpg";
 		persons.add(p);
 	}
 

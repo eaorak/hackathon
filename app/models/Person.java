@@ -7,6 +7,7 @@ public class Person {
 	public int age;
 	public String address;
 	public Location loc;
+	public String imgUrl;
 
 	@Override
 	public String toString() {

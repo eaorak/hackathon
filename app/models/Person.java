@@ -8,4 +8,9 @@ public class Person {
 	public String address;
 	public Location loc;
 
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", loc=" + loc + "]";
+	}
+
 }

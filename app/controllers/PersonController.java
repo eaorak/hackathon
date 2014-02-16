@@ -7,6 +7,9 @@ import models.Location;
 import models.Person;
 import play.mvc.Controller;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class PersonController extends Controller {
 
 	public static void index() {
@@ -46,7 +49,6 @@ public class PersonController extends Controller {
 	}
 
 	public static void create() {
-
 	}
 
 	public static void get() {
@@ -65,6 +67,15 @@ public class PersonController extends Controller {
 
 	public static void delete() {
 
+	}
+
+	public static void main(String[] args) {
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		Gson gson = gsonBuilder.setPrettyPrinting().create();
+		String json = gson.toJson(persons.get(0));
+		Person person = gson.fromJson(json, Person.class);
+		System.out.println(json);
+		System.out.println(person);
 	}
 
 }

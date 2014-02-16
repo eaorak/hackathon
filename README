@@ -1,0 +1,18 @@
+This is the restful web service part for "Hackathon" project of Android Application Development course.
+
+--- Tips & Tricks -------------------------------------------------------------------------------------
+
+# Web service calls can NOT be done in main thread. Thus an AsyncTask has to be created. Sample AsyncTask definition can be done as: 
+
+AsyncTask<String, Integer, List<Person>> 
+
+# For displaying images check out following links and consider using the library:
+
+http://stackoverflow.com/questions/5776851/load-image-from-url
+https://github.com/koush/UrlImageViewHelper
+
+# Web service will be reachable via following URL after the lesson: 
+
+http://elron.co:9000
+
+# All information and sample codes can be found in previous examples to complete the project. And you can reach me via mail group for your questions.
